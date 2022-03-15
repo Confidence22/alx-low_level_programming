@@ -1,20 +1,21 @@
-#include <unistd.h>
 #include "main.h"
 
 /**
- * main -  prints _putchar, followed by a new line
+ * main - This returns a value if true
  *
- * Return: Always 0 (Success)
+ * Return: 0 if successful
  */
-
 int main(void)
 {
-	char word[9] = "_putchar\n";
-	int i;
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
-	for (i = 0; i < 9; i++)
-	{
-		_putchar(word[i]);
-	}
 	return (0);
 }
