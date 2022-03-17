@@ -1,33 +1,36 @@
 #include <stdio.h>
 
 /**
- * main - Outputs the values
- * Return: 0 Successful
+ *main - Entry point
+ *Return: Always 0 (success)
  */
+
 int main(void)
 {
-	int n, m, l;
+	int i;
+	int j;
+	int k;
 
-	for (n = 49; n < 58; n++)
+	for (i = 48; i <= 57; i++)
 	{
-		for (m = 49; m < 58; m++)
+		for (j = i + 1; j <= 57; j++)
 		{
-			for (l = 50; l < 58; l++)
+			for (k = j + 1; k <= 57; k++)
 			{
-				if (l > m && m > n)
+				putchar(i);
+				putchar(j);
+				putchar(k);
+
+				if ((i + j + k) < (55 + 56 + 57))
 				{
-					putchar(n);
-					putchar(m);
-					putchar(l);
-					if (n != 55 || m != 56)
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(44);
+					putchar(32);
 				}
 			}
 		}
+
 	}
-	putchar('\n');
+	putchar(10);
+
 	return (0);
 }
